@@ -38,9 +38,7 @@ p{
     color: rgb(0, 31, 49);
     margin: 15px 0 20px 0;
 }
-a{
-    text-decoration: none;
-}
+
 
 #header{
     display:flex;
@@ -61,4 +59,29 @@ a{
 #navbar li{
     list-style: none;
     padding: 0px 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(48, 47, 47);
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #00bbe0e0;
+}
+
+#navbar li a.active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #00bbe0e0;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
 }
