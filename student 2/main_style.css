@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
+/* GLOBAL STYLLING*/
 *{
     margin: 0;
     padding: 0;
@@ -35,14 +35,24 @@ h6{
 
 p{
     font-size: 16px;
-    color: rgb(0, 31, 49);
+    color: rgb(1, 13, 20);
     margin: 15px 0 20px 0;
 }
 a{
     text-decoration: none;
 }
 
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+/* GLOBAL STYLLING END */
 
+
+
+/* HEADER & NAVBAR */
 #header{
     display:flex;
     justify-content: space-between;
@@ -89,9 +99,10 @@ a{
     position: absolute;
     bottom: -4px;
     left: 20px;
-
 }
+/* HEADER & NAVBAR END*/
 
+/*THE HERO SECTION*/
 #hero{
     
     height: 75vh;
@@ -142,10 +153,78 @@ a{
     height: 100%;
     background:rgb(56, 115, 129);
     mix-blend-mode:overlay ;
-    z-index: 1;
+    z-index: 2;
 }
 
 #hero h2,h4,p,button{
     position: relative;
     z-index: 5;
 }
+
+/*THE HERO SECTION END*/
+
+/*THE FEATURED PRODUCTS*/
+#product-1{
+    text-align: center;
+    padding-top: 800px;
+}
+#product-1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#product-1 .pro{
+    width: 23%;
+    min-width: 200px;
+    max-width: 250px;
+    padding: 10px 12px;
+    border: 1.5px solid #daeff3;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px;
+    box-shadow: 20px 20px 30px rgba(61, 61, 61, 0.03);
+    transition: 0,2s ease;
+    position: relative;
+}
+
+#product-1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.09);
+}
+
+#product-1 .pro img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+#product-1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+
+}
+#product-1 .pro .des span{
+    font-size: 12px;
+    
+}
+
+#product-1 .pro .des h5{
+    font-size: 20px;
+    color: black;
+    font-weight: 800;
+}
+
+#product-1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    line-height: 40px;
+    background-color: rgb(212, 252, 255);
+    color: rgb(0, 119, 255);
+    font-weight: 500;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+
+/*THE FEATURED PRODUCTS END*/
