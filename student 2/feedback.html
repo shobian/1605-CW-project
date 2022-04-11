@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyAnything.com</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="master_style.css">
+    <link rel="stylesheet" href="feedback_style.css">
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt = "site_logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a herf="#">News Letter</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <div id="overlay">
+        <form id="myform" onsubmit="event.preventDefault(); validateForm()">
+
+            <h2>Feedback</h2>
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <small class="error"></small>
+
+            <label for="email">Email: </label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <small class="error"></small>
+
+            <label for="message">Your Feedback</label>
+            <textarea type="text" id="message" placeholder="Enter your message" rows="6"></textarea>
+            <small class="error"></small>
+
+            <label for="rating">Your rating on the site</label>
+            <div class="rating">
+                <input class="notcenter" type="radio" id="star5" name="rating" value="Love the site"> <label for="star5"></label>
+                <input class="notcenter" type="radio" id="star4" name="rating" value="the site is grest"> <label for="star4"></label>
+                <input class="notcenter" type="radio" id="star3" name="rating" value="the site is ok"> <label for="star3"></label>
+                <input class="notcenter" type="radio" id="star2" name="rating" value="don't like the site"> <label for="star2"></label>
+                <input class="notcenter" type="radio" id="star1" name="rating" value="hate the site"> <label for="star1"></label>
+
+                <span class="result"></span>
+            </div>
+            <small class="error"></small>
+            
+            <div class="center">
+                <input type="reset">
+                <input type="submit" value="Send Feedback">
+                
+            </div>
+        </form>
+    </div>
+
+
+    <script src="feedback_script.js"></script>
+</body>
+ 
+<footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="img/logo.png">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> Wellawatte</p>
+        <p><strong>phone:</strong> 0111234567</p>
+        <strong>E-mail:</strong>info@buyanything.com</p>
+
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="">Ashvin</a>
+        <a href="">Nethum</a>
+        <a href="">Shobian</a>
+        <a href="">Yuwindu</a>
+    </div>
+
+    <div class="col">
+        <h4>Account</h4>
+        <a href="">Sign in</a>
+        <a href="">Cart</a>
+        <a href="">Track Order</a>
+        <a href="">Help</a>
+    </div>
+
+    <div class="col-install">
+        <p>Secured Payment gateway</p>
+        <img src="img/pay/pay.png">
+    </div>
+
+    <div class="copyright">
+        <p>Editor <a href="Shobian.html">Shobian</a></p>
+        <p>© 2022 Group 5, CW 1605. All rights reserved.</p>
+    </div>
+
+
+
+</footer>
+
+</html>
